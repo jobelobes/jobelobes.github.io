@@ -1,10 +1,4 @@
 import * as _ from 'lodash'
+import { ThreeEngine } from './libs/3ngine'
 
-class Game {
-
-    run(){
-        console.log('running')
-    }
-}
-
-new Game().run();
+new ThreeEngine().run();

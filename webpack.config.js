@@ -1,8 +1,13 @@
 var path = require('path');
 
 module.exports = {
+  entry: {
+    app: './src/index.js'
+  },
+  output: {
+    path: path.join(__dirname, 'dist'),
+  },
   devServer: {
-    //contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 8080
   }
