@@ -15,10 +15,11 @@ export default class Rectangle extends Drawable {
     }
 
     onDraw(context){
-        context.strokeStyle = "#FF0000";
+        context.strokeStyle = "#FFFFFF";
         context.fillStyle = "#FF0000";
         context.rect(this.bounds.x, this.bounds.y, this.bounds.width, this.bounds.height);
         context.fill();
+        context.stroke();
 
         console.log('[Rectangle]: ' + this.bounds.toString())
     }
